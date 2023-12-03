@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Information</title>
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Information</h1>
+
+    <form action="/location" method="post">
+      <label for="locationInput">Enter Location:</label>
+      <input type="text" id="locationInput" name="location" required>
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <% if (error) { %>
+      <p class="error-message">Error: <%= error %></p>
+    <% } else if (location) { %>
+      <div id="weatherResult">
+        <img src="<"
+        <p>Location: <%= place.name %></p>
+        <p>Temperature: <%= location.temp_c %>°C</p>
+        <p>Condition: <%= location.condition.text %></p>
+      </div>
+    <% } %>
+  </div>
+</body>
+<script>
+  if (performance.navigation.type === 1) {
+    // Redirect to the home page
+    window.location.href = "/";
+  }
+</script>
+</html>
