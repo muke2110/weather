@@ -28,7 +28,7 @@ app.post('/location', async (req, res) => {
     const response = await axios.get(apiUrl);
     const data = response.data;
 
-    console.log(`Location : ${data.location.name}\nCondition : ${data.current.condition.text}\nTemperature : ${data.current.temp_c}`);
+    console.log(`Location : ${data.location.name}\nCondition : ${data.current.condition.text}\nTemperature`);
     // Render the EJS file with the weather information
     res.render('index', { error: null, location: data.current ,place: data.location, png:data.current.condition.icon});
   } catch (error) {
