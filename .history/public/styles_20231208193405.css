@@ -4,26 +4,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font-family */
     margin: 0;
     padding: 0;
-    /* For picture in below div
-    background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D');
-    */
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
     background-color: #319bb0; /* Light blue background */
 }
 
 .container {
     max-width: 800px; /* Increased max-width for a more spacious feel */
     margin: 50px auto;
-    background-color: #00e5ff61;
+    background-color: #09d3ea;
     padding: 30px;
     border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 0 20px rgb(5, 191, 238);
-
-   /* For picture in above div
-    background-image: url('https://wallpapers.com/images/hd/cloudy-weather-with-palm-tree-c4pzuybo1zlqcydt.jpg');
-    */
-   
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -73,10 +63,11 @@ button:hover {
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 12px;
-    background-color: #1cb6cdc1; /* Lighter blue background */
+    background-color: #279aabc1; /* Lighter blue background */
 }
 
 footer {
     text-align: center;
-    margin-top: 20px; /* Adjust as needed for spacing between content and footer */
+    margin-top: 30px;
+    color: #555; /* Dark gray text color */
 }
